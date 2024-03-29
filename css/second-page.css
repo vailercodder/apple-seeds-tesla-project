@@ -1,0 +1,23 @@
+.second-page 
+    {
+  height: 100vh; /* Adjust the height as needed */
+  width: 100%;
+  background-image: url('/css/Model-3-Exterior-Desktop-NA.png');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Ensures the text can be absolutely positioned within */
+  display: flex;
+  align-items: flex-start; /* Aligns the content to the top */
+  justify-content: center; /* Centers the content horizontally */
+  text-align: center;
+  color: white; /* Adjust text color for visibility */
+  padding-top: 20px; /* Add some padding at the top or adjust as needed */
+  font-family: fonty;
+  font-size: 14px;
+  margin-top: -112px;
+}
+
+.content {
+  max-width: auto; /* Adjust content width */
+  padding: 20px;
+}

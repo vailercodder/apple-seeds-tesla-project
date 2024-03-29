@@ -3,391 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic Video Background</title>
+    <title>Tesla model 3</title>
     <link rel="stylesheet" href="/css/normalize.css">
-    <style>
-
-
-@font-face {
-    font-family: 'Fonty';
-    src: url('/fonts/GothamSSm-Medium.woff') format('woff'),
-         url(  "fonts/GothamSSm-Medium.ttf") format('truetype'); /* Corrected format identifier */
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Fonty2';
-    src: url('/fonts/GothamSSm-Black.woff') format('woff'),
-         url('/fonts/GothamSSm-Black.ttf') format('truetype');
-    font-weight: 300; 
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'tesla';
-    src: 
-         url('/fonts/TESLA.ttf') format('truetype');
-    font-weight: 300; 
-    font-style: normal;
-}
-
-
-
-
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
-        .video-background {
-            position: absolute; 
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -100;
-            background-size: cover;
-        }
-
-
-        .main-content {
-             
-            position: relative;
-            z-index: 100;
-            color: #fff;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-             }
-        
-        .top-box {
-    width: 100%;
-    height:  auto;;
-    background-color: rgb(0,0,0);
-    position: sticky;
-    top: 0;
-    z-index: 101;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    color: white;
-    padding-left: 20px; 
-    z-index: 103;
-}
-
-
-.top-box-texts {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin-right: 36px;
-   
-}
-
-.top-box-text {
-    font-size: 14px; 
-    margin-right: 10px; 
-    display: inline-block; 
-    font-family: "fonty2";
-    font-size: 17px;
-
-   
-}
-
-.top-box-text-light {
-
-    font-family: "fonty";
-    font-size: 14px;
-    margin-left: 15px;
-
-
-}
-
-
-
-
-.top-box-text:last-child, .top-box-text-light:last-child {
-    margin-right: 0;
-}
-
-
-
-.demo-drive-link {
-            font-size: 14px;
-            color: white; 
-            text-decoration: none; 
-            margin-left: 20px; 
-            font-family: "fonty";
-            border-bottom: 1px solid white; 
-           
-   
-  
-}
-    
-
-
-.demo-drive-link:hover {
+    <link rel="stylesheet" href="/css/main-body.css">
+    <link rel="stylesheet" href="/css/box-nav.css">
+    <link rel="stylesheet" href="/css/main-page-section.css">
+    <link rel="stylesheet" href="/css/second-page.css">
+    <link rel="icon" type="icon" href="/icons/favicon.ico">
  
-    
-    border-bottom: 2px solid white; 
-   
-}
-
-
-
-.navbar {
-    width: 100%;
-    background-color: none; /* Semi-transparent black */
-    padding: 10px 0;
-    position: absolute;
-    top: 52px; /* Adjust based on your top-box height */
-    z-index: 102;
-    display: flex;
-    align-items: center; 
-    
-    
-}
-
-.nav-logo {
-    margin-right: auto; /* Pushes everything else to the right */
-}
-
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    padding: 10px;
-    margin: 0 auto; /* Centers the list in the available space */
-    align-items: center;
-    margin-left: -111px;
-    font-family: fonty;
-    font-size: 15px;
-    position: relative;
-
-}
-
-.nav-item {
-    margin: 0 10px;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: white;
-   
-    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Smooth transition for background-color, color, and padding */
-}
-
-.nav-link:hover {
-  
-    padding: 8px; /* Adds some padding around the text inside the link */
-    background-color: rgb(242, 242, 242); /* Light grey background on hover */
-    color: black; /* Text color changes to black on hover */
-    border-radius: 5px; /* Rounds the corners of the border */
-   
-    border: none; /* Removes any border */
-}
-
-
-.nav-tesla {
-color: white;
-    font-size: 20px;
-    margin-left: 60px;
-    font-family: 'tesla';
-    text-decoration: none; 
-    
-}
-.nav-btn {
-    background: transparent; /* Make button background transparent */
-    border: none; /* Remove border */
-    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
-    color: white;
-    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Smooth transition for background-color, color, and padding */
-}
-.nav-btn img {
-    width: 24px; /* Adjust width as needed */
-    height: 24px; /* Adjust height as needed */
-}
-
-.nav-btn:hover {
-  
-  padding: 8px; /* Adds some padding around the text inside the link */
-  background-color: rgb(242, 242, 242); /* Light grey background on hover */
-  color: black; /* Text color changes to black on hover */
-  border-radius: 5px; /* Rounds the corners of the border */
- 
-  border: none; /* Removes any border */
-}
-
-
-
-
-.footer-buttons {
-    display: flex;
-    justify-content: center; /* Center buttons horizontally */
-    padding: 20px; /* Add some padding */
-}
-
-.footer-buttons {
-    position: flex;
-    bottom: 0; /* Align to the bottom of the viewport */
-    left: 0;
-    width: 100%; /* Span across the entire width of the viewport */
-    display: flex;
-    justify-content: center; /* Center buttons horizontally */
-    padding: 20px; /* Add some padding */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
-}
-
-.footer-btn:hover {
-    background-color: #45a049; /* Darker shade of green on hover */
-}
-
-.h1-section{
-
-font-family: fonty;
-justify-content: center;
-flex-direction: column;
-font-size: 20px;
-transform: translateY(-230px);
-
-
-
-}
-
-
-
-.b{
-    margin-left: 120px;
-    font-size: 40px;
-    margin-bottom: -5px;
-}
-.a{
-    
-    margin-top: -10px; /* Adjust this value as needed */
-    margin-left: 120px;
-    font-family: fonty;
-    font-size: 22px;
-    margin-bottom: -25px;
-
-}
-
-.c {
-
-margin-left: 55px;
-}
-.selection-all {
-    font-family: fonty;
-
-    transform: translateY(190px);
-
-
-}
-
-
-
-
-
-.btn-container {
-    display: flex;
-    justify-content: space-between;
-    width: 210px; /* Adjust based on the total width you'd like */
-    
-    
-    width: 100%;
-    height: auto; /* Adjust if you have a specific height in mind */
-    gap:  1px;  /* Optional: Adjusts the gap between the video and the image */
-
-}
-
-.b1 {
-width: 255px;
-height:40px;
-border-radius: 5px;
-border: none;
-background-color: white;
-transition: background-color 0.3s ease, color 0.3s ease; 
-}
-.b1:hover {
-    background-color: gainsboro; /* Change background to white on hover */
-     }
-
-.b2 {
-width: 255px;
-height:40px;
-border-radius: 5px;
-border: solid 2px;
-background-color: transparent;
-border-color: white;
-color: white;
-transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color and background-color */
-}
-
-
-.b2:hover {
-    background-color: white; /* Change background to white on hover */
-    color: black; /* Change text color to black (or any contrasting color) on hover */
-}
-
-
-.p-section{
-    display: flex;
-    justify-content: space-between;
-    font-size: 25px;
-    
-
-
-}
-
-.p-section-small{
-    display: flex;
-    gap: 100px;   /* Adjust the value as needed */
-    text-align: cente-inline-start: 5pxr; /* Optional: centers the text within each paragraph */
-    font-size:15px;
-
-
-}
-
-.p-section-small p{
- 
-}   
-
-
-.second-page 
-    {
-  height: 100vh; /* Adjust the height as needed */
-  width: 100%;
-  background-image: url('/css/Model-3-Exterior-Desktop-NA.png');
-  background-size: cover;
-  background-position: center;
-  position: relative; /* Ensures the text can be absolutely positioned within */
-  display: flex;
-  align-items: flex-start; /* Aligns the content to the top */
-  justify-content: center; /* Centers the content horizontally */
-  text-align: center;
-  color: white; /* Adjust text color for visibility */
-  padding-top: 20px; /* Add some padding at the top or adjust as needed */
-  font-family: fonty;
-  font-size: 14px;
-  margin-top: -112px;
-}
-
-.content {
-  max-width: auto; /* Adjust content width */
-  padding: 20px;
-}
-
-
-
-
-
-
-
-    </style>
 </head>
 
     
@@ -398,7 +21,35 @@ transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition fo
             <p class="top-box-text-light">Be among the first to get behind the wheel of our brand new Model 3.</p>
             <a href="https://github.com/vailercodder/apple-seeds-tesla-project" target="_blank" class="demo-drive-link">Schedule a Demo Drive</a>
         </div>
-    
+    <style>
+
+/* Adjust styles for tablets */
+@media (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* Adjust styles for mobile devices */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+
+    </style>
 
 </header>
 
