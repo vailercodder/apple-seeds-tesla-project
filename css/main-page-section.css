@@ -108,16 +108,15 @@ transition: background-color 0.3s ease, color 0.3s ease;
 }   
 
 @keyframes pulsing {
-    0%, 100% {
-      background-color: var(--primary-color);
-      fill: var(--secondary-color);
-    }
-    50% {
-      background-color: white;
-      fill: white; 
-    }
-  }
-  
+    100% {
+       background-color: var(--primary-color);
+       fill: var(--secondary-color);
+   }
+   70% {
+       background-color: white;
+       fill: var(--secondary-color);
+   }
+}
 
   .chat-btn {
     position: fixed;
