@@ -19,7 +19,7 @@ transform: translateY(-230px);
 }
 .a{
     
-    margin-top: -10px; /* Adjust this value as needed */
+    margin-top: -10px; 
     margin-left: 120px;
     font-family: fonty;
     font-size: 22px;
@@ -46,12 +46,12 @@ margin-left: 55px;
 .btn-container {
     display: flex;
     justify-content: space-between;
-    width: 210px; /* Adjust based on the total width you'd like */
+    width: 210px; 
     
     
     width: 100%;
-    height: auto; /* Adjust if you have a specific height in mind */
-    gap:  1px;  /* Optional: Adjusts the gap between the video and the image */
+    height: auto; 
+    gap:  1px; 
 
 }
 
@@ -64,7 +64,7 @@ background-color: white;
 transition: background-color 0.3s ease, color 0.3s ease; 
 }
 .b1:hover {
-    background-color: gainsboro; /* Change background to white on hover */
+    background-color: gainsboro; 
      }
 
 .b2 {
@@ -75,13 +75,13 @@ border: solid 2px;
 background-color: transparent;
 border-color: white;
 color: white;
-transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color and background-color */
+transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 
 .b2:hover {
-    background-color: white; /* Change background to white on hover */
-    color: black; /* Change text color to black (or any contrasting color) on hover */
+    background-color: white; 
+    color: black; 
 }
 
 
@@ -96,8 +96,8 @@ transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition fo
 
 .p-section-small{
     display: flex;
-    gap: 100px;   /* Adjust the value as needed */
-    text-align: cente-inline-start: 5pxr; /* Optional: centers the text within each paragraph */
+    gap: 100px;   
+    text-align: center-inline-start; 5pxr; 
     font-size:15px;
 
 
@@ -106,3 +106,44 @@ transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition fo
 .p-section-small p{
  
 }   
+
+@keyframes pulsing {
+    0%, 100% {
+      background-color: var(--primary-color);
+      fill: var(--secondary-color);
+    }
+    50% {
+      background-color: white;
+      fill: white; 
+    }
+  }
+  
+
+  .chat-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 3.5rem;
+    background: transparent;
+    width: 3.6rem;
+    height: 2.8rem;
+    z-index: 10;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulsing 5s 5s infinite;
+    overflow: hidden;
+    min-width: auto;
+    min-height: auto;
+    
+  }
+  
+  .chat-btn-icon {
+    padding: 1.3rem 0 0 0.2rem;
+    width: 50%;
+    height: 100%;
+    fill: var(--primary-color);
+    animation: pulsing 5s 5s infinite;
+  }

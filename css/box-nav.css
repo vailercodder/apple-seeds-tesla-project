@@ -75,10 +75,10 @@
 
 .navbar {
     width: 100%;
-    background-color: none; /* Semi-transparent black */
+    background-color: none; 
     padding: 10px 0;
     position: absolute;
-    top: 52px; /* Adjust based on your top-box height */
+    top: 52px; 
     z-index: 102;
     display: flex;
     align-items: center; 
@@ -87,14 +87,14 @@
 }
 
 .nav-logo {
-    margin-right: auto; /* Pushes everything else to the right */
+    margin-right: auto; 
 }
 
 .nav-list {
     list-style-type: none;
     display: flex;
     padding: 10px;
-    margin: 0 auto; /* Centers the list in the available space */
+    margin: 0 auto; 
     align-items: center;
     margin-left: -111px;
     font-family: fonty;
@@ -111,17 +111,17 @@
     text-decoration: none;
     color: white;
    
-    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Smooth transition for background-color, color, and padding */
+    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; 
 }
 
 .nav-link:hover {
   
-    padding: 8px; /* Adds some padding around the text inside the link */
-    background-color: rgb(242, 242, 242); /* Light grey background on hover */
-    color: black; /* Text color changes to black on hover */
-    border-radius: 5px; /* Rounds the corners of the border */
+    padding: 8px; 
+    background-color: rgb(242, 242, 242); 
+    color: black; 
+    border-radius: 5px; 
    
-    border: none; /* Removes any border */
+    border: none; 
 }
 
 
@@ -134,23 +134,23 @@ color: white;
     
 }
 .nav-btn {
-    background: transparent; /* Make button background transparent */
-    border: none; /* Remove border */
-    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
     color: white;
-    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Smooth transition for background-color, color, and padding */
+    transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; 
 }
 .nav-btn img {
-    width: 24px; /* Adjust width as needed */
-    height: 24px; /* Adjust height as needed */
+    width: 24px; 
+    height: 24px; 
 }
 
 .nav-btn:hover {
   
-  padding: 8px; /* Adds some padding around the text inside the link */
-  background-color: rgb(242, 242, 242); /* Light grey background on hover */
-  color: black; /* Text color changes to black on hover */
-  border-radius: 5px; /* Rounds the corners of the border */
+  padding: 8px; 
+  background-color: rgb(242, 242, 242); 
+  color: black; 
+  border-radius: 5px; 
  
-  border: none; /* Removes any border */
+  border: none; 
 }
